@@ -5,6 +5,7 @@
 package reto3cabin.reto3;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import java.io.Serializable;
 import java.util.List;
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
@@ -17,7 +18,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "client")
 
-public class Cliente {
+public class Cliente implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
